@@ -1,0 +1,16 @@
+type Query {
+    getComputerByProcessor(processor: String!): [ComputerDto!]!
+}
+
+type ComputerDto {
+    id: ID
+    name: String
+    processor: String
+    ram: Int
+}
+
+input ComputerDtoInput {
+    name: String
+    processor: String
+    ram: Int
+}
